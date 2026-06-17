@@ -1,0 +1,159 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fepsip-api
+  namespace: fepsip
+  labels:
+    app: fepsip
+    component: api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fepsip
+      component: api
+  template:
+    metadata:
+      labels:
+        app: fepsip
+        component: api
+    spec:
+      containers:
+        - name: api
+          image: fepsip-api:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+          env:
+            - name: NEO4J_URI
+              valueFrom:
+                secretKeyRef:
+                  name: fepsip-secrets
+                  key: neo4j-uri
+            - name: NEO4J_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: fepsip-secrets
+                  key: neo4j-password
+            - name: QDRANT_HOST
+              value: qdrant-service
+          resources:
+            requests:
+              cpu: "500m"
+              memory: "512Mi"
+            limits:
+              cpu: "2000m"
+              memory: "2Gi"
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 30
+            periodSeconds: 15
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          volumeMounts:
+            - name: checkpoints
+              mountPath: /app/checkpoints
+            - name: logs
+              mountPath: /app/logs
+      volumes:
+        - name: checkpoints
+          persistentVolumeClaim:
+            claimName: fepsip-checkpoints-pvc
+        - name: logs
+          emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: fepsip-api-service
+  namespace: fepsip
+spec:
+  selector:
+    app: fepsip
+    component: api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fepsip-dashboard
+  namespace: fepsip
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fepsip
+      component: dashboard
+  template:
+    metadata:
+      labels:
+        app: fepsip
+        component: dashboard
+    spec:
+      containers:
+        - name: dashboard
+          image: fepsip-dashboard:latest
+          ports:
+            - containerPort: 8501
+          env:
+            - name: API_BASE
+              value: http://fepsip-api-service:80
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "256Mi"
+            limits:
+              cpu: "1000m"
+              memory: "1Gi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: fepsip-dashboard-service
+  namespace: fepsip
+spec:
+  selector:
+    app: fepsip
+    component: dashboard
+  ports:
+    - protocol: TCP
+      port: 8501
+      targetPort: 8501
+  type: LoadBalancer
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: fepsip-ingress
+  namespace: fepsip
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - host: fepsip.example.com
+      http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: fepsip-api-service
+                port:
+                  number: 80
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: fepsip-dashboard-service
+                port:
+                  number: 8501

@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "fepsip"
+version = "1.0.0"
+description = "Financial Event Propagation & Systemic Risk Intelligence Platform"
+authors = [{name = "FEPSIP Team"}]
+requires-python = ">=3.12"
+dependencies = [
+    # Core
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "scipy>=1.11",
+    "scikit-learn>=1.3",
+    # Deep Learning
+    "torch>=2.1",
+    "torchvision>=0.16",
+    # NLP
+    "transformers>=4.35",
+    "tokenizers>=0.15",
+    "sentencepiece>=0.1.99",
+    # Graph
+    "networkx>=3.2",
+    "pyvis>=0.3",
+    # Data
+    "yfinance>=0.2",
+    "requests>=2.31",
+    "httpx>=0.25",
+    "aiohttp>=3.9",
+    # API
+    "fastapi>=0.104",
+    "uvicorn[standard]>=0.24",
+    "pydantic>=2.5",
+    "pydantic-settings>=2.1",
+    # Dashboard
+    "streamlit>=1.28",
+    "plotly>=5.18",
+    # ML
+    "hmmlearn>=0.3",
+    "shap>=0.43",
+    "statsmodels>=0.14",
+    # Vector DB
+    "qdrant-client>=1.7",
+    # Alerts
+    "python-telegram-bot>=20.6",
+    # Utils
+    "loguru>=0.7",
+    "python-dotenv>=1.0",
+    "pyyaml>=6.0",
+    "rich>=13.6",
+    "typer>=0.9",
+    "tenacity>=8.2",
+    "schedule>=1.2",
+    "python-dateutil>=2.8",
+    # Testing
+    "pytest>=7.4",
+    "pytest-asyncio>=0.21",
+    "pytest-cov>=4.1",
+    "httpx>=0.25",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "--cov=src --cov-report=term-missing --cov-fail-under=80"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

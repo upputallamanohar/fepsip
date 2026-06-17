@@ -1,0 +1,132 @@
+# FEPSIP Configuration
+app:
+  name: "FEPSIP"
+  version: "1.0.0"
+  debug: false
+  log_level: "INFO"
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 4
+  reload: false
+
+dashboard:
+  host: "0.0.0.0"
+  port: 8501
+
+data_sources:
+  yahoo_finance:
+    enabled: true
+    rate_limit_per_second: 2
+    retry_attempts: 3
+    retry_wait_seconds: 5
+  finnhub:
+    enabled: false
+    api_key: "${FINNHUB_API_KEY}"
+  polygon:
+    enabled: false
+    api_key: "${POLYGON_API_KEY}"
+
+market_data:
+  default_tickers:
+    - AAPL
+    - MSFT
+    - GOOGL
+    - AMZN
+    - NVDA
+    - TSLA
+    - JPM
+    - GS
+    - XOM
+    - BA
+  lookback_days: 365
+  intraday_interval: "1h"
+
+sectors:
+  Technology: [AAPL, MSFT, GOOGL, NVDA, META]
+  Finance: [JPM, GS, BAC, WFC, MS]
+  Energy: [XOM, CVX, COP, SLB]
+  Healthcare: [JNJ, PFE, UNH, ABT]
+  Consumer: [AMZN, TSLA, WMT, HD]
+  Industrial: [BA, GE, CAT, MMM]
+  Materials: [FCX, NEM, AA]
+
+graph:
+  backend: "networkx"
+  neo4j:
+    uri: "${NEO4J_URI}"
+    user: "${NEO4J_USER}"
+    password: "${NEO4J_PASSWORD}"
+  temporal_snapshot_interval_hours: 24
+  max_snapshots: 365
+
+models:
+  device: "auto"
+  finbert_model: "ProsusAI/finbert"
+  price_encoder:
+    hidden_size: 128
+    num_layers: 2
+    dropout: 0.1
+  graph_encoder:
+    hidden_channels: 64
+    num_layers: 3
+    heads: 4
+  fusion:
+    embed_dim: 256
+    num_heads: 8
+    num_layers: 3
+    dropout: 0.1
+
+training:
+  batch_size: 32
+  learning_rate: 1.0e-4
+  epochs: 50
+  val_split: 0.2
+  test_split: 0.1
+  checkpoint_dir: "checkpoints"
+  early_stopping_patience: 10
+
+risk:
+  thresholds:
+    low: 30
+    medium: 60
+    high: 80
+    critical: 90
+  contagion_depth: 3
+  monte_carlo_simulations: 1000
+
+anomaly:
+  isolation_forest_contamination: 0.05
+  svdd_nu: 0.1
+  lookback_window: 30
+
+alerts:
+  email:
+    enabled: false
+    smtp_host: "${SMTP_HOST}"
+    smtp_port: 587
+    sender: "${ALERT_EMAIL}"
+    password: "${EMAIL_PASSWORD}"
+  telegram:
+    enabled: false
+    token: "${TELEGRAM_TOKEN}"
+    chat_id: "${TELEGRAM_CHAT_ID}"
+  webhook:
+    enabled: false
+    url: "${WEBHOOK_URL}"
+  risk_threshold: 80
+  contagion_threshold: 0.7
+
+vector_db:
+  qdrant:
+    host: "${QDRANT_HOST}"
+    port: 6333
+    collection: "financial_memory"
+    vector_size: 768
+
+portfolio:
+  initial_capital: 1000000
+  max_position_size: 0.15
+  risk_free_rate: 0.05
+  rebalance_frequency: "weekly"

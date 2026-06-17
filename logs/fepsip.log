@@ -1,0 +1,334 @@
+2026-06-16 16:10:10 | INFO     | src.utils.logger:setup_logger:41 | FEPSIP Logger initialized at level=INFO
+2026-06-16 16:10:10 | INFO     | src.api.main:lifespan:59 | 🚀 FEPSIP API starting up...
+2026-06-16 16:10:10 | INFO     | src.graph.knowledge_graph:__init__:105 | FinancialKnowledgeGraph initialized: 49 nodes, 45 edges
+2026-06-16 16:10:10 | INFO     | src.memory.financial_memory:_seed_historical_data:178 | Seeded 6 historical crises into memory store
+2026-06-16 16:10:10 | INFO     | src.ingestion.market_data:run_all:218 | Starting full data pipeline for 10 tickers...
+2026-06-16 16:10:16 | INFO     | src.ingestion.market_data:fetch_all:163 | Fetched macro data: 7 indicators
+2026-06-16 16:10:16 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AAPL
+2026-06-16 16:10:16 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for MSFT
+2026-06-16 16:10:16 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GOOGL
+2026-06-16 16:10:16 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AMZN
+2026-06-16 16:10:16 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for NVDA
+2026-06-16 16:10:16 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for TSLA
+2026-06-16 16:10:16 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for JPM
+2026-06-16 16:10:16 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GS
+2026-06-16 16:10:16 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for XOM
+2026-06-16 16:10:16 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for BA
+2026-06-16 16:10:16 | INFO     | src.ingestion.market_data:fetch_all:129 | Fetched fundamentals for 10 tickers
+2026-06-16 16:10:17 | INFO     | src.ingestion.market_data:fetch_all:203 | Fetched 100 news articles
+2026-06-16 16:10:17 | INFO     | src.ingestion.market_data:run_all:225 | Data pipeline complete.
+2026-06-16 16:10:17 | INFO     | src.graph.knowledge_graph:update_correlations:158 | Added 1 correlation edges (threshold=0.6)
+2026-06-16 16:10:17 | INFO     | src.api.main:lifespan:91 | ✅ Initial data load complete
+2026-06-16 16:11:45 | INFO     | src.api.main:lifespan:97 | FEPSIP API shutting down
+2026-06-16 16:12:25 | INFO     | src.utils.logger:setup_logger:41 | FEPSIP Logger initialized at level=INFO
+2026-06-16 16:12:25 | INFO     | src.api.main:lifespan:59 | 🚀 FEPSIP API starting up...
+2026-06-16 16:12:25 | INFO     | src.graph.knowledge_graph:__init__:105 | FinancialKnowledgeGraph initialized: 49 nodes, 45 edges
+2026-06-16 16:12:25 | INFO     | src.memory.financial_memory:_seed_historical_data:178 | Seeded 6 historical crises into memory store
+2026-06-16 16:12:25 | INFO     | src.ingestion.market_data:run_all:218 | Starting full data pipeline for 10 tickers...
+2026-06-16 16:12:30 | INFO     | src.ingestion.market_data:fetch_all:163 | Fetched macro data: 7 indicators
+2026-06-16 16:12:30 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AAPL
+2026-06-16 16:12:30 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for MSFT
+2026-06-16 16:12:30 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GOOGL
+2026-06-16 16:12:30 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AMZN
+2026-06-16 16:12:30 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for NVDA
+2026-06-16 16:12:30 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for TSLA
+2026-06-16 16:12:30 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for JPM
+2026-06-16 16:12:30 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GS
+2026-06-16 16:12:30 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for XOM
+2026-06-16 16:12:30 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for BA
+2026-06-16 16:12:31 | INFO     | src.ingestion.market_data:fetch_all:203 | Fetched 100 news articles
+2026-06-16 16:12:31 | INFO     | src.ingestion.market_data:fetch_all:129 | Fetched fundamentals for 10 tickers
+2026-06-16 16:12:31 | INFO     | src.ingestion.market_data:run_all:225 | Data pipeline complete.
+2026-06-16 16:12:31 | INFO     | src.graph.knowledge_graph:update_correlations:158 | Added 1 correlation edges (threshold=0.6)
+2026-06-16 16:12:31 | INFO     | src.api.main:lifespan:91 | ✅ Initial data load complete
+2026-06-16 16:14:45 | INFO     | src.api.main:lifespan:97 | FEPSIP API shutting down
+2026-06-16 16:19:01 | INFO     | src.utils.logger:setup_logger:41 | FEPSIP Logger initialized at level=INFO
+2026-06-16 16:19:01 | INFO     | src.api.main:lifespan:59 | 🚀 FEPSIP API starting up...
+2026-06-16 16:19:01 | INFO     | src.graph.knowledge_graph:__init__:105 | FinancialKnowledgeGraph initialized: 49 nodes, 45 edges
+2026-06-16 16:19:02 | INFO     | src.memory.financial_memory:_seed_historical_data:178 | Seeded 6 historical crises into memory store
+2026-06-16 16:19:02 | INFO     | src.ingestion.market_data:run_all:218 | Starting full data pipeline for 10 tickers...
+2026-06-16 16:19:06 | INFO     | src.ingestion.market_data:fetch_all:163 | Fetched macro data: 7 indicators
+2026-06-16 16:19:06 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AAPL
+2026-06-16 16:19:06 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for MSFT
+2026-06-16 16:19:06 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GOOGL
+2026-06-16 16:19:06 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AMZN
+2026-06-16 16:19:06 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for NVDA
+2026-06-16 16:19:06 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for TSLA
+2026-06-16 16:19:06 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for JPM
+2026-06-16 16:19:06 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GS
+2026-06-16 16:19:06 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for XOM
+2026-06-16 16:19:06 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for BA
+2026-06-16 16:19:06 | INFO     | src.ingestion.market_data:fetch_all:129 | Fetched fundamentals for 10 tickers
+2026-06-16 16:19:06 | INFO     | src.ingestion.market_data:fetch_all:203 | Fetched 100 news articles
+2026-06-16 16:19:06 | INFO     | src.ingestion.market_data:run_all:225 | Data pipeline complete.
+2026-06-16 16:19:06 | INFO     | src.graph.knowledge_graph:update_correlations:158 | Added 1 correlation edges (threshold=0.6)
+2026-06-16 16:19:06 | INFO     | src.api.main:lifespan:91 | ✅ Initial data load complete
+2026-06-16 16:24:37 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-16 16:24:50 | INFO     | src.events.event_intelligence:classify_batch:249 | Classified 20 events from 20 articles
+2026-06-16 16:25:00 | INFO     | src.portfolio.portfolio_manager:optimize:184 | Portfolio optimized: Sharpe=2.148, Vol=0.160, Ret=0.393
+2026-06-16 16:26:30 | INFO     | src.simulation.scenario_simulator:simulate:138 | Running simulation: fed_rate_hike on JPM (severity=0.70)
+2026-06-16 16:27:00 | INFO     | src.agents.agents:run:77 | [NewsAgent] Fetching news...
+2026-06-16 16:27:00 | INFO     | src.agents.agents:run:133 | [GraphAgent] Updating graph...
+2026-06-16 16:27:00 | INFO     | src.graph.knowledge_graph:update_correlations:158 | Added 1 correlation edges (threshold=0.6)
+2026-06-16 16:27:00 | INFO     | src.agents.agents:run:102 | [EventAgent] Classifying events...
+2026-06-16 16:27:00 | INFO     | src.events.event_intelligence:classify_batch:249 | Classified 50 events from 50 articles
+2026-06-16 16:27:00 | INFO     | src.agents.agents:run:170 | [RiskAgent] Computing systemic risk...
+2026-06-16 16:27:00 | INFO     | src.agents.agents:run:199 | [PortfolioAgent] Optimizing portfolio...
+2026-06-16 16:27:00 | INFO     | src.portfolio.portfolio_manager:optimize:184 | Portfolio optimized: Sharpe=2.148, Vol=0.160, Ret=0.393
+2026-06-16 16:27:00 | INFO     | src.agents.agents:run_pipeline:299 | Agent pipeline complete. Agents run: ['news', 'graph', 'events', 'risk', 'portfolio', 'research']
+2026-06-16 16:27:37 | INFO     | src.anomaly.anomaly_detector:fit:75 | IsolationForest fitted on 102 samples
+2026-06-16 16:27:37 | INFO     | src.anomaly.anomaly_detector:detect:116 | Detected 6 anomalies for AAPL
+2026-06-16 16:41:30 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-16 16:41:44 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-16 16:42:03 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-16 16:42:46 | INFO     | src.api.main:_refresh:438 | Background data refresh started...
+2026-06-16 16:42:46 | INFO     | src.ingestion.market_data:run_all:218 | Starting full data pipeline for 10 tickers...
+2026-06-16 16:42:49 | INFO     | src.ingestion.market_data:fetch_all:163 | Fetched macro data: 7 indicators
+2026-06-16 16:42:49 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AAPL
+2026-06-16 16:42:49 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for MSFT
+2026-06-16 16:42:49 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GOOGL
+2026-06-16 16:42:49 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AMZN
+2026-06-16 16:42:49 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for NVDA
+2026-06-16 16:42:49 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for TSLA
+2026-06-16 16:42:49 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for JPM
+2026-06-16 16:42:49 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GS
+2026-06-16 16:42:49 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for XOM
+2026-06-16 16:42:49 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for BA
+2026-06-16 16:42:49 | INFO     | src.api.main:_refresh:438 | Background data refresh started...
+2026-06-16 16:42:49 | INFO     | src.ingestion.market_data:run_all:218 | Starting full data pipeline for 10 tickers...
+2026-06-16 16:42:51 | INFO     | src.ingestion.market_data:fetch_all:163 | Fetched macro data: 7 indicators
+2026-06-16 16:42:51 | INFO     | src.ingestion.market_data:fetch_all:203 | Fetched 100 news articles
+2026-06-16 16:42:51 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AAPL
+2026-06-16 16:42:51 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for MSFT
+2026-06-16 16:42:51 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GOOGL
+2026-06-16 16:42:51 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AMZN
+2026-06-16 16:42:51 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for NVDA
+2026-06-16 16:42:51 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for TSLA
+2026-06-16 16:42:51 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for JPM
+2026-06-16 16:42:51 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GS
+2026-06-16 16:42:51 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for XOM
+2026-06-16 16:42:51 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for BA
+2026-06-16 16:42:51 | INFO     | src.ingestion.market_data:fetch_all:129 | Fetched fundamentals for 10 tickers
+2026-06-16 16:42:51 | INFO     | src.ingestion.market_data:run_all:225 | Data pipeline complete.
+2026-06-16 16:42:52 | INFO     | src.graph.knowledge_graph:update_correlations:158 | Added 1 correlation edges (threshold=0.6)
+2026-06-16 16:42:52 | INFO     | src.api.main:_refresh:446 | Background data refresh complete
+2026-06-16 16:42:52 | INFO     | src.ingestion.market_data:fetch_all:203 | Fetched 100 news articles
+2026-06-16 16:42:53 | INFO     | src.ingestion.market_data:fetch_all:129 | Fetched fundamentals for 10 tickers
+2026-06-16 16:42:53 | INFO     | src.ingestion.market_data:run_all:225 | Data pipeline complete.
+2026-06-16 16:42:53 | INFO     | src.graph.knowledge_graph:update_correlations:158 | Added 1 correlation edges (threshold=0.6)
+2026-06-16 16:42:53 | INFO     | src.api.main:_refresh:446 | Background data refresh complete
+2026-06-16 16:43:09 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-16 16:43:54 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-16 16:44:32 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-16 16:44:55 | INFO     | src.events.event_intelligence:classify_batch:249 | Classified 30 events from 30 articles
+2026-06-16 16:45:09 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-16 16:45:21 | INFO     | src.api.main:_refresh:438 | Background data refresh started...
+2026-06-16 16:45:21 | INFO     | src.ingestion.market_data:run_all:218 | Starting full data pipeline for 10 tickers...
+2026-06-16 16:45:23 | INFO     | src.ingestion.market_data:fetch_all:163 | Fetched macro data: 7 indicators
+2026-06-16 16:45:23 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AAPL
+2026-06-16 16:45:23 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for MSFT
+2026-06-16 16:45:23 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GOOGL
+2026-06-16 16:45:23 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AMZN
+2026-06-16 16:45:23 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for NVDA
+2026-06-16 16:45:23 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for TSLA
+2026-06-16 16:45:23 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for JPM
+2026-06-16 16:45:23 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GS
+2026-06-16 16:45:23 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for XOM
+2026-06-16 16:45:23 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for BA
+2026-06-16 16:45:23 | INFO     | src.api.main:_refresh:438 | Background data refresh started...
+2026-06-16 16:45:23 | INFO     | src.ingestion.market_data:run_all:218 | Starting full data pipeline for 10 tickers...
+2026-06-16 16:45:23 | INFO     | src.api.main:_refresh:438 | Background data refresh started...
+2026-06-16 16:45:23 | INFO     | src.ingestion.market_data:run_all:218 | Starting full data pipeline for 10 tickers...
+2026-06-16 16:45:23 | INFO     | src.api.main:_refresh:438 | Background data refresh started...
+2026-06-16 16:45:23 | INFO     | src.ingestion.market_data:run_all:218 | Starting full data pipeline for 10 tickers...
+2026-06-16 16:45:23 | INFO     | src.api.main:_refresh:438 | Background data refresh started...
+2026-06-16 16:45:23 | INFO     | src.ingestion.market_data:run_all:218 | Starting full data pipeline for 10 tickers...
+2026-06-16 16:45:25 | INFO     | src.ingestion.market_data:fetch_all:163 | Fetched macro data: 7 indicators
+2026-06-16 16:45:26 | INFO     | src.ingestion.market_data:fetch_all:163 | Fetched macro data: 7 indicators
+2026-06-16 16:45:27 | INFO     | src.ingestion.market_data:fetch_all:163 | Fetched macro data: 7 indicators
+2026-06-16 16:45:27 | INFO     | src.ingestion.market_data:fetch_all:163 | Fetched macro data: 7 indicators
+2026-06-16 16:45:27 | INFO     | src.ingestion.market_data:fetch_all:203 | Fetched 100 news articles
+2026-06-16 16:45:27 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AAPL
+2026-06-16 16:45:27 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for MSFT
+2026-06-16 16:45:27 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GOOGL
+2026-06-16 16:45:27 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AMZN
+2026-06-16 16:45:27 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for NVDA
+2026-06-16 16:45:27 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for TSLA
+2026-06-16 16:45:27 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for JPM
+2026-06-16 16:45:27 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GS
+2026-06-16 16:45:27 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for XOM
+2026-06-16 16:45:27 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for BA
+2026-06-16 16:45:27 | INFO     | src.ingestion.market_data:fetch_all:203 | Fetched 100 news articles
+2026-06-16 16:45:28 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AAPL
+2026-06-16 16:45:28 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for MSFT
+2026-06-16 16:45:28 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GOOGL
+2026-06-16 16:45:28 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AMZN
+2026-06-16 16:45:28 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for NVDA
+2026-06-16 16:45:28 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for TSLA
+2026-06-16 16:45:28 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for JPM
+2026-06-16 16:45:28 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GS
+2026-06-16 16:45:28 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for XOM
+2026-06-16 16:45:28 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for BA
+2026-06-16 16:45:29 | INFO     | src.ingestion.market_data:fetch_all:129 | Fetched fundamentals for 10 tickers
+2026-06-16 16:45:29 | INFO     | src.ingestion.market_data:run_all:225 | Data pipeline complete.
+2026-06-16 16:45:29 | INFO     | src.graph.knowledge_graph:update_correlations:158 | Added 1 correlation edges (threshold=0.6)
+2026-06-16 16:45:29 | INFO     | src.api.main:_refresh:446 | Background data refresh complete
+2026-06-16 16:45:29 | INFO     | src.ingestion.market_data:fetch_all:129 | Fetched fundamentals for 10 tickers
+2026-06-16 16:45:29 | INFO     | src.ingestion.market_data:fetch_all:203 | Fetched 100 news articles
+2026-06-16 16:45:29 | INFO     | src.ingestion.market_data:fetch_all:129 | Fetched fundamentals for 10 tickers
+2026-06-16 16:45:29 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AAPL
+2026-06-16 16:45:29 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for MSFT
+2026-06-16 16:45:29 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GOOGL
+2026-06-16 16:45:29 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AMZN
+2026-06-16 16:45:29 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for NVDA
+2026-06-16 16:45:29 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for TSLA
+2026-06-16 16:45:29 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for JPM
+2026-06-16 16:45:29 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GS
+2026-06-16 16:45:29 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for XOM
+2026-06-16 16:45:29 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for BA
+2026-06-16 16:45:30 | INFO     | src.ingestion.market_data:run_all:225 | Data pipeline complete.
+2026-06-16 16:45:30 | INFO     | src.graph.knowledge_graph:update_correlations:158 | Added 1 correlation edges (threshold=0.6)
+2026-06-16 16:45:30 | INFO     | src.api.main:_refresh:446 | Background data refresh complete
+2026-06-16 16:45:30 | INFO     | src.ingestion.market_data:run_all:225 | Data pipeline complete.
+2026-06-16 16:45:30 | INFO     | src.graph.knowledge_graph:update_correlations:158 | Added 1 correlation edges (threshold=0.6)
+2026-06-16 16:45:30 | INFO     | src.api.main:_refresh:446 | Background data refresh complete
+2026-06-16 16:45:31 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-16 16:45:31 | INFO     | src.ingestion.market_data:fetch_all:129 | Fetched fundamentals for 10 tickers
+2026-06-16 16:45:31 | INFO     | src.ingestion.market_data:fetch_all:203 | Fetched 100 news articles
+2026-06-16 16:45:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AAPL
+2026-06-16 16:45:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for MSFT
+2026-06-16 16:45:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GOOGL
+2026-06-16 16:45:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AMZN
+2026-06-16 16:45:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for NVDA
+2026-06-16 16:45:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for TSLA
+2026-06-16 16:45:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for JPM
+2026-06-16 16:45:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GS
+2026-06-16 16:45:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for XOM
+2026-06-16 16:45:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for BA
+2026-06-16 16:45:31 | INFO     | src.ingestion.market_data:fetch_all:203 | Fetched 100 news articles
+2026-06-16 16:45:31 | INFO     | src.ingestion.market_data:fetch_all:129 | Fetched fundamentals for 10 tickers
+2026-06-16 16:45:31 | INFO     | src.ingestion.market_data:run_all:225 | Data pipeline complete.
+2026-06-16 16:45:31 | INFO     | src.graph.knowledge_graph:update_correlations:158 | Added 1 correlation edges (threshold=0.6)
+2026-06-16 16:45:31 | INFO     | src.api.main:_refresh:446 | Background data refresh complete
+2026-06-16 16:45:31 | INFO     | src.ingestion.market_data:run_all:225 | Data pipeline complete.
+2026-06-16 16:45:31 | INFO     | src.graph.knowledge_graph:update_correlations:158 | Added 1 correlation edges (threshold=0.6)
+2026-06-16 16:45:31 | INFO     | src.api.main:_refresh:446 | Background data refresh complete
+2026-06-16 16:45:44 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-16 16:45:45 | INFO     | src.api.main:_refresh:438 | Background data refresh started...
+2026-06-16 16:45:45 | INFO     | src.ingestion.market_data:run_all:218 | Starting full data pipeline for 10 tickers...
+2026-06-16 16:45:47 | INFO     | src.ingestion.market_data:fetch_all:163 | Fetched macro data: 7 indicators
+2026-06-16 16:45:47 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AAPL
+2026-06-16 16:45:47 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for MSFT
+2026-06-16 16:45:47 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GOOGL
+2026-06-16 16:45:47 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AMZN
+2026-06-16 16:45:47 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for NVDA
+2026-06-16 16:45:47 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for TSLA
+2026-06-16 16:45:47 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for JPM
+2026-06-16 16:45:47 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GS
+2026-06-16 16:45:47 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for XOM
+2026-06-16 16:45:47 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for BA
+2026-06-16 16:45:48 | INFO     | src.ingestion.market_data:fetch_all:203 | Fetched 100 news articles
+2026-06-16 16:45:49 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-16 16:45:50 | INFO     | src.ingestion.market_data:fetch_all:129 | Fetched fundamentals for 10 tickers
+2026-06-16 16:45:50 | INFO     | src.ingestion.market_data:run_all:225 | Data pipeline complete.
+2026-06-16 16:45:50 | INFO     | src.graph.knowledge_graph:update_correlations:158 | Added 1 correlation edges (threshold=0.6)
+2026-06-16 16:45:50 | INFO     | src.api.main:_refresh:446 | Background data refresh complete
+2026-06-16 17:06:38 | INFO     | src.utils.logger:setup_logger:41 | FEPSIP Logger initialized at level=INFO
+2026-06-16 17:06:38 | INFO     | src.api.main:lifespan:59 | 🚀 FEPSIP API starting up...
+2026-06-16 17:06:38 | INFO     | src.graph.knowledge_graph:__init__:105 | FinancialKnowledgeGraph initialized: 49 nodes, 45 edges
+2026-06-16 17:06:38 | INFO     | src.memory.financial_memory:_seed_historical_data:178 | Seeded 6 historical crises into memory store
+2026-06-16 17:06:38 | INFO     | src.ingestion.market_data:run_all:218 | Starting full data pipeline for 10 tickers...
+2026-06-16 17:06:43 | INFO     | src.ingestion.market_data:fetch_all:163 | Fetched macro data: 7 indicators
+2026-06-16 17:06:43 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AAPL
+2026-06-16 17:06:43 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for MSFT
+2026-06-16 17:06:43 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GOOGL
+2026-06-16 17:06:43 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AMZN
+2026-06-16 17:06:43 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for NVDA
+2026-06-16 17:06:43 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for TSLA
+2026-06-16 17:06:43 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for JPM
+2026-06-16 17:06:43 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GS
+2026-06-16 17:06:43 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for XOM
+2026-06-16 17:06:43 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for BA
+2026-06-16 17:06:44 | INFO     | src.ingestion.market_data:fetch_all:203 | Fetched 100 news articles
+2026-06-16 17:06:45 | INFO     | src.ingestion.market_data:fetch_all:129 | Fetched fundamentals for 10 tickers
+2026-06-16 17:06:45 | INFO     | src.ingestion.market_data:run_all:225 | Data pipeline complete.
+2026-06-16 17:06:45 | INFO     | src.graph.knowledge_graph:update_correlations:158 | Added 1 correlation edges (threshold=0.6)
+2026-06-16 17:06:45 | INFO     | src.api.main:lifespan:91 | ✅ Initial data load complete
+2026-06-16 17:09:03 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-16 17:09:07 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-16 17:09:22 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-16 17:10:14 | INFO     | src.api.main:_refresh:438 | Background data refresh started...
+2026-06-16 17:10:14 | INFO     | src.ingestion.market_data:run_all:218 | Starting full data pipeline for 10 tickers...
+2026-06-16 17:10:17 | INFO     | src.ingestion.market_data:fetch_all:163 | Fetched macro data: 7 indicators
+2026-06-16 17:10:17 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AAPL
+2026-06-16 17:10:17 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for MSFT
+2026-06-16 17:10:17 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GOOGL
+2026-06-16 17:10:17 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AMZN
+2026-06-16 17:10:17 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for NVDA
+2026-06-16 17:10:17 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for TSLA
+2026-06-16 17:10:17 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for JPM
+2026-06-16 17:10:17 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GS
+2026-06-16 17:10:17 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for XOM
+2026-06-16 17:10:17 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for BA
+2026-06-16 17:10:17 | INFO     | src.ingestion.market_data:fetch_all:203 | Fetched 100 news articles
+2026-06-16 17:10:20 | INFO     | src.ingestion.market_data:fetch_all:129 | Fetched fundamentals for 10 tickers
+2026-06-16 17:10:20 | INFO     | src.ingestion.market_data:run_all:225 | Data pipeline complete.
+2026-06-16 17:10:20 | INFO     | src.graph.knowledge_graph:update_correlations:158 | Added 1 correlation edges (threshold=0.6)
+2026-06-16 17:10:20 | INFO     | src.api.main:_refresh:446 | Background data refresh complete
+2026-06-16 17:12:42 | INFO     | src.simulation.scenario_simulator:simulate:138 | Running simulation: factory_shutdown on AAPL (severity=0.75)
+2026-06-16 17:12:48 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-16 17:16:20 | INFO     | src.anomaly.anomaly_detector:fit:75 | IsolationForest fitted on 102 samples
+2026-06-16 17:16:20 | INFO     | src.anomaly.anomaly_detector:detect:116 | Detected 6 anomalies for JPM
+2026-06-16 17:16:41 | INFO     | src.portfolio.portfolio_manager:optimize:184 | Portfolio optimized: Sharpe=2.148, Vol=0.160, Ret=0.393
+2026-06-16 17:17:19 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-17 16:23:33 | INFO     | src.utils.logger:setup_logger:41 | FEPSIP Logger initialized at level=INFO
+2026-06-17 16:23:33 | INFO     | src.api.main:lifespan:59 | 🚀 FEPSIP API starting up...
+2026-06-17 16:23:33 | INFO     | src.graph.knowledge_graph:__init__:105 | FinancialKnowledgeGraph initialized: 49 nodes, 45 edges
+2026-06-17 16:23:33 | INFO     | src.memory.financial_memory:_seed_historical_data:178 | Seeded 6 historical crises into memory store
+2026-06-17 16:23:33 | INFO     | src.ingestion.market_data:run_all:218 | Starting full data pipeline for 10 tickers...
+2026-06-17 16:23:36 | INFO     | src.ingestion.market_data:fetch_all:163 | Fetched macro data: 7 indicators
+2026-06-17 16:23:36 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AAPL
+2026-06-17 16:23:36 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for MSFT
+2026-06-17 16:23:36 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GOOGL
+2026-06-17 16:23:36 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AMZN
+2026-06-17 16:23:36 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for NVDA
+2026-06-17 16:23:36 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for TSLA
+2026-06-17 16:23:36 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for JPM
+2026-06-17 16:23:36 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GS
+2026-06-17 16:23:36 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for XOM
+2026-06-17 16:23:36 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for BA
+2026-06-17 16:23:36 | INFO     | src.ingestion.market_data:fetch_all:203 | Fetched 100 news articles
+2026-06-17 16:23:38 | INFO     | src.ingestion.market_data:fetch_all:129 | Fetched fundamentals for 10 tickers
+2026-06-17 16:23:38 | INFO     | src.ingestion.market_data:run_all:225 | Data pipeline complete.
+2026-06-17 16:23:38 | INFO     | src.graph.knowledge_graph:update_correlations:158 | Added 1 correlation edges (threshold=0.6)
+2026-06-17 16:23:38 | INFO     | src.api.main:lifespan:91 | ✅ Initial data load complete
+2026-06-17 16:25:25 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-17 16:26:50 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-17 16:27:19 | INFO     | src.events.event_intelligence:classify_batch:249 | Classified 30 events from 30 articles
+2026-06-17 16:27:46 | INFO     | src.events.event_intelligence:classify_batch:249 | Classified 30 events from 30 articles
+2026-06-17 16:31:18 | INFO     | src.api.main:lifespan:97 | FEPSIP API shutting down
+2026-06-17 16:31:28 | INFO     | src.utils.logger:setup_logger:41 | FEPSIP Logger initialized at level=INFO
+2026-06-17 16:31:28 | INFO     | src.api.main:lifespan:59 | 🚀 FEPSIP API starting up...
+2026-06-17 16:31:28 | INFO     | src.graph.knowledge_graph:__init__:105 | FinancialKnowledgeGraph initialized: 49 nodes, 45 edges
+2026-06-17 16:31:28 | INFO     | src.memory.financial_memory:_seed_historical_data:178 | Seeded 6 historical crises into memory store
+2026-06-17 16:31:28 | INFO     | src.ingestion.market_data:run_all:218 | Starting full data pipeline for 10 tickers...
+2026-06-17 16:31:31 | INFO     | src.ingestion.market_data:fetch_all:163 | Fetched macro data: 7 indicators
+2026-06-17 16:31:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AAPL
+2026-06-17 16:31:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for MSFT
+2026-06-17 16:31:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GOOGL
+2026-06-17 16:31:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for AMZN
+2026-06-17 16:31:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for NVDA
+2026-06-17 16:31:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for TSLA
+2026-06-17 16:31:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for JPM
+2026-06-17 16:31:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for GS
+2026-06-17 16:31:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for XOM
+2026-06-17 16:31:31 | INFO     | src.ingestion.market_data:fetch_all:79 | Fetched 122 rows for BA
+2026-06-17 16:31:32 | INFO     | src.ingestion.market_data:fetch_all:203 | Fetched 100 news articles
+2026-06-17 16:31:33 | INFO     | src.ingestion.market_data:fetch_all:129 | Fetched fundamentals for 10 tickers
+2026-06-17 16:31:33 | INFO     | src.ingestion.market_data:run_all:225 | Data pipeline complete.
+2026-06-17 16:31:33 | INFO     | src.graph.knowledge_graph:update_correlations:158 | Added 1 correlation edges (threshold=0.6)
+2026-06-17 16:31:33 | INFO     | src.api.main:lifespan:91 | ✅ Initial data load complete
+2026-06-17 16:32:15 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-17 16:32:54 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-17 16:33:36 | INFO     | src.regime.market_regime:fit:119 | HMM regime detector fitted with 5 states
+2026-06-17 16:35:27 | INFO     | src.api.main:lifespan:97 | FEPSIP API shutting down
