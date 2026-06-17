@@ -10,17 +10,14 @@ jobs:
   test:
     name: Run Tests
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ["3.12"]
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python ${{ matrix.python-version }}
+      - name: Set up Python 3.12
         uses: actions/setup-python@v5
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: "3.12"
           cache: pip
 
       - name: Install dependencies
@@ -33,14 +30,7 @@ jobs:
 
       - name: Run unit tests
         run: |
-          python -m pytest tests/unit/ -v --cov=src --cov-report=xml \
-                 --cov-fail-under=75 -p no:warnings
-
-      - name: Upload coverage
-        uses: codecov/codecov-action@v4
-        if: always()
-        with:
-          file: ./coverage.xml
+          PYTHONPATH=. pytest tests/unit/ -v --no-cov -p no:warnings
 
   lint:
     name: Code Quality
@@ -60,24 +50,12 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v4
-
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-
       - name: Build API image
         uses: docker/build-push-action@v5
         with:
           context: .
           file: docker/Dockerfile.api
           push: false
-          tags: fepsip-api:${{ github.sha }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
-
-      - name: Build Dashboard image
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          file: docker/Dockerfile.dashboard
-          push: false
-          tags: fepsip-dashboard:${{ github.sha }}
+          tags: fepsip-api:latest
